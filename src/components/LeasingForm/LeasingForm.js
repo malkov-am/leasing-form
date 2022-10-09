@@ -174,7 +174,7 @@ const LeasingForm = ({ isLoading, onSubmit }) => {
                 onBlur={() => onInputBlur(downPayment, setDownPayment)}
                 onFocus={() => onInputFocus(downPayment, setDownPayment)}
               ></input>
-              <span className="leasing-form__input-number-unit">%</span>
+              <span className="leasing-form__input-percentage">%</span>
             </div>
             <input
               disabled={isLoading}
@@ -218,13 +218,13 @@ const LeasingForm = ({ isLoading, onSubmit }) => {
           </div>
         </div>
         <div className="leasing-form__total-wrapper">
-          <div className="leasing-form__text-wrapper">
+          <div>
             <p className="leasing-form__text-label">Сумма договора лизинга</p>
-            <p className="leasing-form__number">{leasingTotal.displayedValue} &#8381;</p>
+            <p className="leasing-form__number">{leasingTotal.displayedValue}&nbsp;&#8381;</p>
           </div>
-          <div className="leasing-form__text-wrapper">
+          <div>
             <p className="leasing-form__text-label">Ежемесячный платеж от</p>
-            <p className="leasing-form__number">{monthPay.displayedValue} &#8381;</p>
+            <p className="leasing-form__number">{monthPay.displayedValue}&nbsp;&#8381;</p>
           </div>
           <button disabled={isLoading} className="leasing-form__submit-btn" onClick={handleSubmit}>
             {!isLoading ? 'Оставить заявку' : <Spinner />}
