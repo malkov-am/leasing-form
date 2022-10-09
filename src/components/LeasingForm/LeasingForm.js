@@ -154,7 +154,6 @@ const LeasingForm = ({ isLoading, onSubmit }) => {
             <span className="leasing-form__input-number-unit">&#8381;</span>
           </div>
         </div>
-
         <div className="leasing-form__container">
           <label htmlFor="down" className="leasing-form__input-label">
             Первоначальный взнос
@@ -187,7 +186,6 @@ const LeasingForm = ({ isLoading, onSubmit }) => {
             />
           </div>
         </div>
-
         <div className="leasing-form__container">
           <label htmlFor="term" className="leasing-form__input-label">
             Срок лизинга
