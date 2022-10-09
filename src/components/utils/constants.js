@@ -1,0 +1,10 @@
+export const DEFAULT_CAR_PRICE = 3300000;
+export const MIN_CAR_PRICE = 1000000;
+export const MAX_CAR_PRICE = 6000000;
+export const DEFAULT_DOWN_PAYMENT = 10;
+export const MIN_DOWN_PAYMENT = 10;
+export const MAX_DOWN_PAYMENT = 60;
+export const DEFAULT_LOAN_TERM = 60;
+export const MIN_LOAN_TERM = 1;
+export const MAX_LOAN_TERM = 60;
+export const INTEREST_RATE = 0.035;
