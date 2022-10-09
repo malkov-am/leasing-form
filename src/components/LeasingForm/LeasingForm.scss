@@ -6,12 +6,38 @@
     line-height: 92%;
     font-weight: 900;
     margin: 0 0 32px 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 54px;
+      margin: 0 0 44px 0;
+    }
+
+    @media screen and (min-width: 1120px) {
+      width: 900px;
+      margin: 0 0 32px 0;
+    }
   }
 
   &__form {
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    @media screen and (min-width: 768px) {
+      gap: 39px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 32px;
+      row-gap: 50px;
+    }
+  }
+
+  &__container {
+    flex-grow: 1;
+    width: 320px;
   }
 
   &__input-label {
@@ -22,6 +48,12 @@
     font-size: 14px;
     line-height: 136%;
     font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 0 24px 0;
+    }
   }
 
   &__input-wrapper {
@@ -37,8 +69,20 @@
     background-color: #f3f3f4;
     border-radius: 16px;
 
+    @media screen and (min-width: 768px) {
+      height: 68px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      padding: 30px;
+    }
+
     &_type_percentage {
       padding-right: 6px;
+
+      @media screen and (min-width: 768px) {
+        padding-right: 7px;
+      }
     }
   }
 
@@ -56,6 +100,10 @@
     background: none;
     appearance: none;
 
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
       -webkit-appearance: none;
@@ -65,6 +113,28 @@
     &:hover {
       outline: none;
       -moz-appearance: textfield;
+    }
+  }
+
+  &__number {
+    height: 20px;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nekst', Verdana, sans-serif;
+    color: #333e48;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: 900;
+    border: none;
+    background: none;
+    appearance: none;
+
+    @media screen and (min-width: 768px) {
+      height: 57px;
+      min-width: 300px;
+      font-size: 54px;
+      line-height: 90%;
     }
   }
 
@@ -92,6 +162,11 @@
     border: none;
     background: none;
     appearance: none;
+
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+      line-height: 36px;
+    }
 
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
@@ -129,6 +204,11 @@
     font-size: 22px;
     line-height: 20px;
     font-weight: 900;
+
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
 
   &__submit-btn {
@@ -146,6 +226,20 @@
     cursor: pointer;
     transition: background-color 0.1s linear;
     margin: 7px 0 0 0;
+
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+      line-height: 36px;
+      height: 68px;
+      min-width: 308px;
+      max-width: 345px;
+      flex-grow: 1;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 1120px) {
+      max-width: 426px;
+    }
 
     &:hover:enabled {
       background-color: #111111;
@@ -168,6 +262,35 @@
     font-size: 14px;
     line-height: 136%;
     font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 16px 0;
+    }
+
+    @media screen and (min-width: 1120px) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &__total-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: flex-start;
+    gap: 25px;
+
+    @media screen and (min-width: 768px) {
+      row-gap: 24px;
+      column-gap: 58px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 

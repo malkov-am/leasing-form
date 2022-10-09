@@ -125,9 +125,9 @@ const LeasingForm = ({ isLoading, onSubmit }) => {
     <div className="leasing-form">
       <h2 className="leasing-form__title">Рассчитайте стоимость автомобиля в лизинг</h2>
       <form className="leasing-form__form" onSubmit={handleSubmit}>
-        <div>
+        <div className="leasing-form__container">
           <label htmlFor="price" className="leasing-form__input-label">
-            Желаемая сумма кредита
+            Стоимость автомобиля
           </label>
           <div className="leasing-form__input-wrapper">
             <input
@@ -155,7 +155,7 @@ const LeasingForm = ({ isLoading, onSubmit }) => {
           </div>
         </div>
 
-        <div>
+        <div className="leasing-form__container">
           <label htmlFor="down" className="leasing-form__input-label">
             Первоначальный взнос
           </label>
@@ -188,7 +188,7 @@ const LeasingForm = ({ isLoading, onSubmit }) => {
           </div>
         </div>
 
-        <div>
+        <div className="leasing-form__container">
           <label htmlFor="term" className="leasing-form__input-label">
             Срок лизинга
           </label>
@@ -217,20 +217,19 @@ const LeasingForm = ({ isLoading, onSubmit }) => {
             <span className="leasing-form__input-number-unit">мес.</span>
           </div>
         </div>
-
-        <div>
-          <p className="leasing-form__text-label">Сумма договора лизинга</p>
-          <p className="leasing-form__input-number">{leasingTotal.displayedValue} &#8381;</p>
+        <div className="leasing-form__total-wrapper">
+          <div className="leasing-form__text-wrapper">
+            <p className="leasing-form__text-label">Сумма договора лизинга</p>
+            <p className="leasing-form__number">{leasingTotal.displayedValue} &#8381;</p>
+          </div>
+          <div className="leasing-form__text-wrapper">
+            <p className="leasing-form__text-label">Ежемесячный платеж от</p>
+            <p className="leasing-form__number">{monthPay.displayedValue} &#8381;</p>
+          </div>
+          <button disabled={isLoading} className="leasing-form__submit-btn" onClick={handleSubmit}>
+            {!isLoading ? 'Оставить заявку' : <Spinner />}
+          </button>
         </div>
-
-        <div>
-          <p className="leasing-form__text-label">Ежемесячный платеж от</p>
-          <p className="leasing-form__input-number">{monthPay.displayedValue} &#8381;</p>
-        </div>
-
-        <button disabled={isLoading} className="leasing-form__submit-btn" onClick={handleSubmit}>
-          {!isLoading ? 'Оставить заявку' : <Spinner />}
-        </button>
       </form>
     </div>
   );
