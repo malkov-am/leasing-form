@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/leasing-form/static/css/main.388174f1.css",
-    "main.js": "/leasing-form/static/js/main.2918f6fa.js",
-    "static/media/Nekst-Black.woff": "/leasing-form/static/media/Nekst-Black.f0e2921efcf1112b1749.woff",
-    "static/media/Nekst-Black.woff2": "/leasing-form/static/media/Nekst-Black.44814bfd3ba4a266cf1d.woff2",
-    "static/media/Gilroy-Regular.woff": "/leasing-form/static/media/Gilroy-Regular.ebe86c0337572553acea.woff",
-    "static/media/Gilroy-Regular.woff2": "/leasing-form/static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
-    "index.html": "/leasing-form/index.html",
-    "main.388174f1.css.map": "/leasing-form/static/css/main.388174f1.css.map",
-    "main.2918f6fa.js.map": "/leasing-form/static/js/main.2918f6fa.js.map"
+    "main.css": "./static/css/main.2077c1df.css",
+    "main.js": "./static/js/main.2918f6fa.js",
+    "static/media/Nekst-Black.woff": "./static/media/Nekst-Black.f0e2921efcf1112b1749.woff",
+    "static/media/Nekst-Black.woff2": "./static/media/Nekst-Black.44814bfd3ba4a266cf1d.woff2",
+    "static/media/Gilroy-Regular.woff": "./static/media/Gilroy-Regular.ebe86c0337572553acea.woff",
+    "static/media/Gilroy-Regular.woff2": "./static/media/Gilroy-Regular.f6c9931fabe5a6eb3307.woff2",
+    "index.html": "./index.html",
+    "main.2077c1df.css.map": "./static/css/main.2077c1df.css.map",
+    "main.2918f6fa.js.map": "./static/js/main.2918f6fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.388174f1.css",
+    "static/css/main.2077c1df.css",
     "static/js/main.2918f6fa.js"
   ]
 }
