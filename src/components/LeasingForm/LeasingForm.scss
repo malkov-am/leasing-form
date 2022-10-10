@@ -201,6 +201,15 @@
       cursor: ew-resize;
       background: #ff9514;
     }
+
+    &::-moz-range-thumb {
+      border: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: ew-resize;
+      background: #ff9514;
+    }
   }
 
   &__input-number-unit {
@@ -327,4 +336,3 @@
   background-color: #ffffff;
   outline: 2px solid #f3f3f4;
 }
-
