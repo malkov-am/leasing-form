@@ -216,17 +216,23 @@ const LeasingForm = ({ isLoading, onSubmit }) => {
           </div>
         </div>
         <div className="leasing-form__total-wrapper">
-          <div>
+          <div className="leasing-form__text-wrapper">
             <p className="leasing-form__text-label">Сумма договора лизинга</p>
             <p className="leasing-form__number">{leasingTotal.displayedValue}&nbsp;&#8381;</p>
           </div>
-          <div>
+          <div className="leasing-form__text-wrapper">
             <p className="leasing-form__text-label">Ежемесячный платеж от</p>
             <p className="leasing-form__number">{monthPay.displayedValue}&nbsp;&#8381;</p>
           </div>
-          <button disabled={isLoading} className="leasing-form__submit-btn" onClick={handleSubmit}>
-            {!isLoading ? 'Оставить заявку' : <Spinner />}
-          </button>
+          <div className="leasing-form__submit-btn-wrapper">
+            <button
+              disabled={isLoading}
+              className="leasing-form__submit-btn"
+              onClick={handleSubmit}
+            >
+              {!isLoading ? 'Оставить заявку' : <Spinner />}
+            </button>
+          </div>
         </div>
       </form>
     </div>
